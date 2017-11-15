@@ -1,4 +1,15 @@
+body {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
 .formClass {
 	text-align: center;
 	margin-top: 15px;
+}
+
+h2 {
+	font: teal;
 }

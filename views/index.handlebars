@@ -12,13 +12,13 @@
 
       <h2>Burgers on the menu!</h2>
 
-      <ol>
+      <ul>
         {{#each burgers}}
           {{#unless devoured}}
             {{> burgers/burger-block devour=true}}
           {{/unless}}
         {{/each}}
-      </ol>
+      </ul>
 
     </div>
     {{!-- closes left list column --}}
@@ -29,13 +29,13 @@
 
       <h2>Burgers that you devoured!</h2>
 
-      <ol>
+      <ul>
         {{#each burgers}}
           {{#if devoured}}
             {{> burgers/burger-block devour=false}}
           {{/if}}
         {{/each}}
-      </ol>
+      </ul>
 
     </div>
     {{!-- closes right list column --}}
