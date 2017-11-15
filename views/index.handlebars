@@ -1,38 +1,66 @@
 <h1>Eat-Da-Burger again and again and again!</h1>
 
-<h2>Burgers that are not devoured!</h2>
 
-<ol>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ol>
+{{!-- container --}}
+<div class="container">
 
-<h2>Burgers that are devoured!</h2>
+  {{!-- list row --}}
+  <div class="row listRow">
 
-<ol>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ol>
+    {{!-- left list column --}}
+    <div class="col-xs-6 listCol">
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+      <h2>Burgers on the menu!</h2>
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+      <ol>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+          {{/unless}}
+        {{/each}}
+      </ol>
+
+    </div>
+    {{!-- closes left list column --}}
+
+    
+    {{!-- right list column --}}
+    <div class="col-xs-6 listCol">
+
+      <h2>Burgers that you devoured!</h2>
+
+      <ol>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/if}}
+        {{/each}}
+      </ol>
+
+    </div>
+    {{!-- closes right list column --}}
+  
+
+
   </div>
+  {{!-- closes list row --}}
 
-  <div class="form-group">
-    <label for="slee">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Not Devoured!
-  </div>
+  <h2>Add a new burger</h2>
+  <form class="create-form">
 
-  <button type="submit">Add Burger</button>
-</form>
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="ca" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="slee">Devoured?</label><br>
+      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+      <input type="radio" name="devoured" value="0"> Not Devoured!
+    </div>
+
+    <button type="submit">Add Burger</button>
+  </form>
+
+</div>
+{{!-- closes the container --}}

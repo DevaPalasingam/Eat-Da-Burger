@@ -1,9 +1,9 @@
 <li>
 	{{name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devour}}DEVOUR TIME!{{else}}REVERSE TIME!{{/if}}
+	<button type="button" class="change-devour btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}">
+		{{#if devour}}Eat it{{else}}Reverse time{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">ERASE FROM HISTORY!</button>
+	<button type="button" class="delete-burger btn btn-danger" data-id="{{this.id}}">Make it go away</button>
 </li>
