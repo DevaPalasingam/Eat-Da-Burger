@@ -1,9 +1,9 @@
 <li>
 	{{name}}
 
-	<button type="button" class="change-devour btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}">
+	<button type="button" class="foodBtn change-devour btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}">
 		{{#if devour}}Eat it{{else}}Reverse time{{/if}}
 	</button>
 
-	<button type="button" class="delete-burger btn btn-danger" data-id="{{this.id}}">Make it go away</button>
+	<button type="button" class="foodBtn delete-burger btn btn-danger" data-id="{{this.id}}">Disappear</button>
 </li>

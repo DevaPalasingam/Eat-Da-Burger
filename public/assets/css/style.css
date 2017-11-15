@@ -5,11 +5,25 @@ body {
 	background-color: black;
 }
 
+.titleHeading {
+	color: teal;
+	text-align: center;
+}
+
+label {
+	color: teal;
+}
+
 .formClass {
 	text-align: center;
 	margin-top: 15px;
 }
 
-h2 {
-	font: teal;
+.listCol {
+	color: teal;
 }
+
+.foodBtn {
+	margin-left: 5px;
+}
+
