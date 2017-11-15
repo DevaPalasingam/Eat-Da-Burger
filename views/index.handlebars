@@ -45,15 +45,28 @@
   </div>
   {{!-- closes list row --}}
 
-  <form class="create-form">
+  
+  {{!-- newBurgerRow --}}
+  <div class="row newBurgerRow">
+  
+    {{!-- newBurger --}}
+    <div class="col-xs-12 newBurger">
 
-    <div class="form-group">
-      <label for="ca">Make a new Burger:</label>
-      <input type="text" id="ca" name="name">
+      <form class="create-form">
+
+        <div class="form-group formClass">
+          <label for="ca">Make a new burger and press enter:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+
+      </form>
+
     </div>
+    {{!-- closes newBurger --}}
 
-    <button type="submit">Add Burger</button>
-  </form>
+  </div>
+  {{!-- closes newBurgerRow --}}
+
 
 </div>
 {{!-- closes the container --}}
